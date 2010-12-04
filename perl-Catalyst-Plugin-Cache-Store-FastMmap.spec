@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    A thin wrapper for
 License:    GPL+ or Artistic
@@ -16,6 +16,8 @@ BuildRequires: perl(Catalyst)
 BuildRequires: perl(Catalyst::Plugin::Cache)
 BuildRequires: perl(Path::Class)
 BuildRequires: perl(Module::Build::Compat)
+BuildRequires: perl(Test::Exception)
+BuildRequires: perl-Test-use-ok
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
